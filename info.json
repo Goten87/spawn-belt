@@ -1,0 +1,8 @@
+{
+  "name": "spawn-belt",
+  "version": "0.1.0",
+  "title": "Spawn Belt",
+  "author": "Barry",
+  "homepage": "",
+  "description": "Create spawn & void belts to test throughput"
+}
