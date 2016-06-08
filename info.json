@@ -1,8 +1,8 @@
 {
   "name": "spawn-belt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "Spawn Belt",
   "author": "Barry",
-  "homepage": "",
+  "homepage": "https://forums.factorio.com/viewtopic.php?f=92&t=26367",
   "description": "Create spawn & void belts to test throughput"
 }
