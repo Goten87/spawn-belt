@@ -1,66 +1,4 @@
-super_belt_horizontal = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32
-}
-super_belt_vertical = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 40,
-}
-super_belt_ending_top = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 80
-}
-super_belt_ending_bottom = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 120
-}
-super_belt_ending_side = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 160
-}
-super_belt_starting_top = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 200
-}
-super_belt_starting_bottom = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 240
-}
-super_belt_starting_side = {
-  filename = "__spawn-belt__/graphics/entity/spawn-belt/spawn-belt.png",
-  priority = "extra-high",
-  width = 40,
-  height = 40,
-  frame_count = 32,
-  y = 280
-}
+require ("transport-belt-stuff")
 
 data:extend({
   {
@@ -92,18 +30,23 @@ data:extend({
       frame_count = 32,
       direction_count = 12
     },
-    belt_horizontal = super_belt_horizontal, -- specified in transport-belt-pictures.lua
-    belt_vertical = super_belt_vertical,
-    ending_top = super_belt_ending_top,
-    ending_bottom = super_belt_ending_bottom,
-    ending_side = super_belt_ending_side,
-    starting_top = super_belt_starting_top,
-    starting_bottom = super_belt_starting_bottom,
-    starting_side = super_belt_starting_side,
-    ending_patch = ending_patch_prototype,
-    ending_patch = ending_patch_prototype,
     fast_replaceable_group = "transport-belt",
-    speed = 0.15375
+    speed = 0.15375,
+    -- specified in transport-belt-stuff.lua
+    belt_horizontal = spawn_belt_horizontal,
+    belt_vertical = spawn_belt_vertical,
+    ending_top = spawn_belt_ending_top,
+    ending_bottom = spawn_belt_ending_bottom,
+    ending_side = spawn_belt_ending_side,
+    starting_top = spawn_belt_starting_top,
+    starting_bottom = spawn_belt_starting_bottom,
+    starting_side = spawn_belt_starting_side,
+    ending_patch = ending_patch_prototype,
+    ending_patch = ending_patch_prototype,
+    connector_frame_sprites = transport_belt_connector_frame_sprites,
+    circuit_connector_sprites = transport_belt_circuit_connector_sprites,
+    circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+    circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
   },
   {
     type = "transport-belt",
@@ -134,17 +77,22 @@ data:extend({
       frame_count = 32,
       direction_count = 12
     },
-    belt_horizontal = super_belt_horizontal, -- specified in transport-belt-pictures.lua
-    belt_vertical = super_belt_vertical,
-    ending_top = super_belt_ending_top,
-    ending_bottom = super_belt_ending_bottom,
-    ending_side = super_belt_ending_side,
-    starting_top = super_belt_starting_top,
-    starting_bottom = super_belt_starting_bottom,
-    starting_side = super_belt_starting_side,
-    ending_patch = ending_patch_prototype,
-    ending_patch = ending_patch_prototype,
     fast_replaceable_group = "transport-belt",
-    speed = 0.15375
+    speed = 0.15375,
+    -- specified in transport-belt-stuff.lua
+    belt_horizontal = spawn_belt_horizontal,
+    belt_vertical = spawn_belt_vertical,
+    ending_top = spawn_belt_ending_top,
+    ending_bottom = spawn_belt_ending_bottom,
+    ending_side = spawn_belt_ending_side,
+    starting_top = spawn_belt_starting_top,
+    starting_bottom = spawn_belt_starting_bottom,
+    starting_side = spawn_belt_starting_side,
+    ending_patch = ending_patch_prototype,
+    ending_patch = ending_patch_prototype,
+    connector_frame_sprites = transport_belt_connector_frame_sprites,
+    circuit_connector_sprites = transport_belt_circuit_connector_sprites,
+    circuit_wire_connection_point = transport_belt_circuit_wire_connection_point,
+    circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
   },
 })
