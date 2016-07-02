@@ -6,5 +6,5 @@
   "author": "Barry",
   "homepage": "https://github.com/MakuraYami/spawn-belt",
   "description": "Create spawn & void belts to test throughput",
-  "dependencies": ["base >= 0.13.1", "? rso-mod"]
+  "dependencies": ["base >= 0.13.1"]
 }
